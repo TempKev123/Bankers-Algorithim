@@ -154,8 +154,8 @@ int main()
                 {
                     temp++;
                 }
-                if (need[i][j]>(total[j]-need[i][j])){
-                    cout << "unable to allocate";
+                if (need[i][j]>(total[j]-need[i][j]+avail[j])){
+                    cout << "ERROR: unable to allocate";
                     return 1;
                 }
             }
